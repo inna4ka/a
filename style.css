@@ -1,0 +1,65 @@
+*{margin: 0; padding: 0;}
+body
+{
+	font-family: 'Nunito', sans-serif;
+	font-size: 1em
+}
+
+
+/*::-webkit-input-placeholder
+{
+	color: red
+}*/
+.box
+{
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+}
+.box:hover .rotate
+{
+	transform: rotateY(180deg);
+}
+img
+{
+	transform: rotateY(180deg);
+}
+.rotate
+{
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	perspective: 1000px
+}
+.text
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.box2
+{
+	width: 80%;
+	height: auto;
+	margin: auto; 
+	/*background: #E5C33C;*/
+}
+.text
+{
+	padding: 20px;
+	color: rgba(0,0,0,0.5);
+}
+img, .text
+{
+	border: 4px double #ccc;
+	/*background: white;*/
+	height: 260px;
+	width: 260px;
+	backface-visibility: hidden;
+}
+.box img
+{
+	height: 100%;
+	width: 100%;
+}
